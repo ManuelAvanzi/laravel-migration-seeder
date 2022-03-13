@@ -21,6 +21,8 @@ class CreateTestTable extends Migration
             
             //
 
+            
+
             $table->smallInteger("number of people");
             $table->string("airline company");
             $table->date("departure date");
