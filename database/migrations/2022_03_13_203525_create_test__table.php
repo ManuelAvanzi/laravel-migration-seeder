@@ -14,12 +14,13 @@ class CreateTestTable extends Migration
     public function up()
     {
         // test è una parola scelta per comprendere meglio phpMyAdmin
-        
         Schema::create('test_', function (Blueprint $table) {
             $table->id();
             $table->string("description, 100");
             $table->string("country destination");
             
+            //
+
             $table->smallInteger("number of people");
             $table->string("airline company");
             $table->date("departure date");
