@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', "holidayController@index")->name("home"); 
+Route::get('/', "LocationController@index")->name("home"); 
