@@ -15,7 +15,7 @@ class CreateSelectionTable extends Migration
     {
         Schema::create('selection', function (Blueprint $table) {
             $table->id();
-            $table->string("description, 100");
+            $table->string("description", 100);
             $table->string("country destination");
             
             //

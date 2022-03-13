@@ -132,4 +132,14 @@ composer require doctrine/dbal:2.*
 
     SEEDER
 
-    
+// aggiorno una migration 
+
+  php artisan make:migration update_selection_table
+
+  // oppure 
+
+  php artisan make:migration update_selection_table --table=selection
+
+  // oppure
+
+  php artisan make:migration add_colums_to_selection_table
