@@ -1,0 +1,40 @@
+CRUD-parte uno 
+
+.C create
+.R read
+.U update
+.D delete
+
+è una serie di regole che Laravel adotta per la manipolazione dei dati sul database
+
+#Ci serve uno standard chiaro , semplice e inequivocabile per le richieste CRUD
+
+LE CRUD CENGONO USATE IN TUTTO QUELLO CHE VIENE CHIAMTO UNA richieste
+
+REST= un architettura chiara, organizzata e condivisa 
+
+reprenstational state transfer
+
+REST introduce il concetto di risorse, cioè fonti di informazione a xui si può accede tramite un identificatore globale(un URI).
+
+Per utilizzare le risorse, client e server cominucano attraverso una 
+interfaccia standard(HTTP) e si scambiano rapprensentazioni di queste risorse
+
+--------------------------------------
+Resourse Controller 
+
+    con il comando artisan make:controller Laravel creai i controller con lo scheletro base 
+
+    Ma Laravel fa di più 
+    Può preparare per noi i nomi delle funzioni che ci servono per creaure una CRUD base.
+
+    basta aggiungere --resource 
+
+    php artisan make:controller --resource NomeController
+
+
+    ----------------------------------
+
+    REST instroduce il concetto di rispose , cioè fonti di informazioni a cui si può accedere tramite un identificatore globale( URI)
+
+    Per utilizzare le risorse, client e serever cominciacno attravero una interfaccia standard HTTP e si scambiano rappresentazioni di queste risorse.  
