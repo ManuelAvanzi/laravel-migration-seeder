@@ -13,14 +13,9 @@ class CreateHolidaysTable extends Migration
      */
     public function up()
     {
-        Schema::create('holidays', function (Blueprint $table) {
-            $table->id();
-            $table->string("country destination");
-            $table->bool("pets");
-            $table->string("airline company");
-            $table->date("departure date");
-            $table->date("arriving date");
-            $table->timestamps();
+        Schema::table('Holiday', function (Blueprint $table) {
+            $table->string("name");
+            $table->string("surname");
         });
     }
 
@@ -31,6 +26,8 @@ class CreateHolidaysTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('holidays');
+        Schema::table('Holiday', function (Blueprint $table) {
+            $table->dropColumn(["name", "surname"]);
+        });
     }
 }
